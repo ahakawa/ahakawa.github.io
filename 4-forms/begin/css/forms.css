@@ -80,7 +80,9 @@ input:not([type="radio"]):not([type="checkbox"]), textarea, select /*not([type="
 	border-radius: 10px;
 	border: none;
 }
-
+i{
+	color: rgba(172, 9, 9, 0.801);
+}
 
 
 
