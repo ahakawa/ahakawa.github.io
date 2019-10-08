@@ -11,7 +11,8 @@ body {
 	background-image: url("../img/galaxy.jpg");
 }
 h1, h3, legend{
-   font-family: 'Architects Daughter', cursive;/*após linkar a fonte no código html, precisa indicar no css*/
+	font-family: 'Creepster', cursive;/*após linkar a fonte no código html, precisa indicar no css*/
+	font-size: 2.5rem;
 }
 .wrapper {
 	width: 80%;
@@ -22,7 +23,7 @@ h1, h3, legend{
 	background-color: rgb(218, 93, 176);
 }
 p, [for="abtype"] {
-	margin-bottom: 0;
+	margin-bottom: 1;
 	margin-top: 2rem;
 }
 section {
