@@ -9,12 +9,14 @@
 
     <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet"> 
 
+    <script src="https://kit.fontawesome.com/9191a7b0d6.js" crossorigin="anonymous"></script>
+
     <link href="./css/survey.css" rel="stylesheet">
 
 </head>
 <body>
     <div>
-    <h1 id="title">Are you happy?!?</h1>
+    <h1 id="title"><i class="fas fa-grin-alt"></i>Are you happy?!?<i class="fas fa-grin-beam"></i></h1>
       
     <p id="description">We would like to know how much happy you are! Please take a minute to collaborate with us.</p>
     
@@ -29,7 +31,7 @@
                 <input type="text" id="lastname" name="lastname" placeholder="Put your last name here" required></label>
             <label id="email-label" for="email">* Email:
                 <input type="email" id="email" name="email" placeholder="Your email address" required></label>
-            <label id="number-label" for="number">* Age</label>
+            <label id="number-label" for="number">* Age: </label>
                 <input type="number" id="number" name="number" min="0" max="115" placeholder="Age" required>
             <label for="role">Which option best describes your current role?</label>
             <select id="dropdown" name="dropdown">

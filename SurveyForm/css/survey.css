@@ -68,3 +68,14 @@ button:hover{
     color: black;
     font-weight: bold;
 }
+i{
+    margin: 10px;
+    color: #F2B705;
+    background-color: black;
+    border: 1px dashed #F2B705;
+    border-radius: 80px;
+    width: 35px;
+    height: 35px;
+    padding-top: 0;
+    padding-bottom: 1px;
+}
