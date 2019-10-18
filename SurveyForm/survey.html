@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet"> 
+
+    <link href="./css/survey.css" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+    <h1 id="title">Are you happy?!?</h1>
+      
+    <p id="description">We would like to know how much happy you are! Please take a minute to collaborate with us.</p>
+    
+    <form id="survey-form" action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
+        <input type="hidden" name="send_to" value="rose.oyakawa@gmail.com">
+
+        <fieldset class="whoiam">
+            <legend>Who am I?</legend>
+            <label id="name" for="firstname">* First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="First name" required>
+            <label id="name-label" for="lastname">* Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
+            <label id="email-label" for="email">* Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            <label id="number-label" for="number">* Age</label>
+                <input type="number" id="number" name="number" min="0" max="115" placeholder="Don't forget your area code" required>
+            <label for="role">Which option best describes your current role?</label>
+            <select id="dropdown" name="dropdown">
+                <option selected>Select one...</option>
+                <option value="student">Student</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="fulltimejob">Full Time Job</option>
+                <option value="fulltimelearner">Full Time Learner</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+        <fieldset class="littlemore">
+            <legend>A little more about you</legend>
+            <label>Do you have any hobbies?</label>
+                <input type="radio" name="hobby" value="yes" checked>Yes
+            
+            <label>
+                <input type="radio" name="hobby" value="no">No
+            </label>
+            <label for="kindhobbies">If yes, let us know them:</label>
+            <textarea id="kindhobbies" name="kindhobbies"></textarea>
+            <label for="freetime">What do you do in your free time?</label>
+            <textarea id="freetime" name="freetime"></textarea>
+            <label>Things that are important for you
+                (check all that apply):</label>
+            <label>
+                <input type="checkbox" value="family" name="family">Family</label>
+            <label><input type="checkbox" value="goodjob" name="goodjob">Good Job</label>
+            <label><input type="checkbox" value="cars" name="cars">Cars</label>
+            <label><input type="checkbox" value="games" name="games">Games</label>
+            <label><input type="checkbox" value="sports" name="sports">Sports</label>
+            <label><input type="checkbox" value="travel" name="travel">Travel</label>
+            <label><input type="checkbox" value="money" name="money">Money</label>
+            <label>Do you consider yourself a happy person?</label>
+                <input type="radio" name="happy" value="yes">Yes
+           
+            <label>
+                <input type="radio" name="happy" value="no">No
+            </label>
+            <label for="happyreasons">Let us know your reasons that you consider(or not) yourself a happy person:</label>
+            <textarea id="happyreasons" name="happyreasons"></textarea> 
+            <label>In your opinion, what do you think is the most important to you be happy:</label>
+            <label> <input type="radio" name="mostimportant" value="money">Money
+            </label>
+            <label>
+                <input type="radio" name="mostimportant" value="family">Family
+            </label>
+            <label>
+                <input type="radio" name="mostimportant" value="carreer">Carreer
+            </label>  
+        </fieldset>  
+        <button id="submit" type="submit">Send your answers!</button>
+    </form>
+
+
+    </div>              
+</body>
+</html>

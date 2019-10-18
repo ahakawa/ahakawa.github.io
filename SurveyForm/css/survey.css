@@ -1,0 +1,70 @@
+body{
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 18px;
+    background-color: #5E728C;
+    
+}
+h1, #description{
+    text-align: center;
+}
+
+div{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    margin: 60px auto;
+    border: 3px;
+    border-style: hidden;
+    border-color: #F2CDAC;
+    background-color: #F2CDAC;
+    border-radius: 10px;
+
+}
+.whoiam{
+    
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 auto;
+
+
+}
+legend{
+    font-weight: bold;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+
+}
+.littlemore{
+    
+    width: 60%;
+    margin: 0 auto;
+    padding: o auto;
+
+}
+label{
+    display: block;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+   
+}
+textarea{
+    height: 8rem;
+    width: 25rem;
+}
+button{
+    font-size: 1.1rem;
+    margin: 2rem 12rem 2rem 24rem;
+    background-color: #D99559;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: 20%;
+    display: block;
+    
+}
+button:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
