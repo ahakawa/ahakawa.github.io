@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dreams</title>
+
+    <link href="./css/landingPage.css" rel="stylesheet">
+</head>
+<body>
+  
+    <header id="header">
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#products">Products</a></li>
+                    <li><a class="nav-link"  href="#about">About</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav> 
+        <img id="header-img" src="images/Banner_dreams.png" alt="logotipo">
+        <video id="video" autoplay loop poster="images/bluesky.jpg">
+            <source src="videos/Up.mp4" type="video/mp4">
+        </video>
+    
+       
+    </header>
+
+    <main>
+    
+    <section id="about">
+        <h2>About</h2>
+    <article>
+        <p>Our company was born to make your dreams come true!</p>
+    </article>
+    </section>
+
+    <section id="products">
+        <h2>Products</h2>
+        <div id="div-travel">
+            <img class="travimg" src="images/travelExp.jpg">
+        <article>
+            <p>Try something new!</p>
+        </article>
+        </div>
+        <div id="div-beach">
+            <img class="beacimg" src="images/beachExp.jpg">
+        <article>
+            <p>Maybe feel a sea breeze?!?</p>
+        </article>
+        </div>
+        <div id="div-wine">
+            <img id="wineimg" src="images/wineExp.png">
+        <article>
+            <p>And what about a little wine?</p>
+        </article>
+         </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+    <article>
+        <p>Contact us</p>
+        <p class="phone">Call now at: 1-800-DREAMS</p>
+    </section>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+            <input type="hidden" name="email" value="rose.oyakawa@gmail.com">
+
+            <label for="email" id="email-label">If you would like to receive our newsletter, please share your email:
+            </label>
+            <input type="email" id="email" placeholder="Your email here" name="email" required>
+            <button>
+              <input id="submit" type="submit">
+            </button>
+    </form>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,155 @@
+body{
+    
+    width: 85%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 800px){
+    p {
+        font-size: 10px;
+    }
+}
+header{
+  
+}
+
+#header-img{
+    
+    margin-top: 60px;  
+    width: 100%;
+    height: 210px;
+    opacity: 0.75;
+    
+    
+}
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    background: url(../images/bluesky.jpg) no-repeat;
+    background-size: cover;
+}
+#nav-bar{
+   
+    position: fixed;
+    margin-right: 10px;
+    margin-left: 680px;
+   
+}
+nav ul{
+   
+    text-align: right;
+    padding-right: 40px;
+    margin-top: 5px;
+    background-color: rgba(73, 114, 175, 0.973);
+
+   
+
+}
+nav li{
+    
+    display: inline-block;
+    padding-left: 40px;
+}
+nav a{
+  
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    background-color: rgb(90, 188, 212);
+    color: black;
+}
+section{
+    
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap;
+
+}
+#div-travel{
+   
+    flex-basis: 80%;
+    text-align: center;
+    margin: 0 auto;
+ 
+}
+.travimg{
+    
+    border-radius: 60px;
+  
+
+}
+#div-beach{
+   
+    flex-basis: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+.beacimg{
+    
+    border-radius: 60px;
+}
+#div-wine{
+    
+    flex-basis: 80%;
+    text-align: center;
+    width: 946px;
+    margin: 0 auto;
+}
+#wineimg{
+    height: 350px;
+  
+    border-radius: 60px;
+    
+}
+img{
+    width: 40%;
+}
+h2, #contact, #about{
+    text-align: center;
+}
+.phone{
+    font-weight: bold;
+    animation-name: grow-shrink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes grow-shrink{
+    0%{
+        font-size: 1em;
+    }
+    50%{
+        font-size: 1.5em;
+    }
+    100%{
+        font-size: 1em;
+    }
+}
+form{
+    border: 3px solid green;
+    margin-bottom: 80px;
+	border: 2px dashed black;
+	margin-top: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+	padding-top: 25px;
+	font-size: 1.5em;
+
+    
+
+}
+#email-label{
+    text-align: center;
+    font-size: 23px;
+}
